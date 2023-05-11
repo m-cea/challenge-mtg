@@ -48,7 +48,7 @@ tbody tr:nth-last-child(-n+4){
     background-color: rosybrown;    
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 500px) {
     td.prescindible, th.prescindible {
         display: none;
     }
