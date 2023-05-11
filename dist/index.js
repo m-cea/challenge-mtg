@@ -16,7 +16,9 @@ app.engine('.hbs', exphbs.engine({
     defaultLayout: 'main',
     extname: '.hbs'
 }))
-app.listen(process.env.PORT)
+
+const port = process.env.PORT || 80
+app.listen(port)
 app.use(rutas)
 
 
