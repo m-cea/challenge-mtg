@@ -26,7 +26,7 @@ module.exports = async function init(){
         const golesC = promiedos(el).find('td:nth-child(9)').text();
         const diferen =  promiedos(el).find('td:nth-child(10)').text();
 
-        Función para crear la DB, una vez ya creada se precisa actualizar, solo se la usó la primera vez.
+        //Función para crear la DB, una vez ya creada se precisa actualizar, solo se la usó la primera vez.
 
         async function guardar(){
 
