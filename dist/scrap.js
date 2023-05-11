@@ -11,7 +11,7 @@ module.exports = async function init(){
         uri: 'https://www.promiedos.com.ar/primera',
         transform: body => cheerio.load(body)
     });
-
+/*
     //Toma de datos de equipos de la página a scrapear
 
     const info_equipo = promiedos('.tablesorter1 tbody tr').each((i, el) =>{
@@ -52,7 +52,7 @@ module.exports = async function init(){
         .catch(err => console.log(err))
 
     })
-    /*    
+    */    
 
     //Función para actualizar tabla
     
@@ -74,8 +74,6 @@ module.exports = async function init(){
     actualizarTabla();
     
 
-})
-  */  
 }
 
 //init();
