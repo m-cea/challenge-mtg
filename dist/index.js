@@ -1,5 +1,6 @@
 const express = require('express')
 let exphbs = require('express-handlebars');
+const config = require('dotenv').config()
 
 require('../database')
 require('../Models/Equipos')
@@ -15,8 +16,7 @@ app.engine('.hbs', exphbs.engine({
     defaultLayout: 'main',
     extname: '.hbs'
 }))
-app.listen(3000)
+app.listen(process.env.PORT)
 app.use(rutas)
-console.log('Server on port: ' + 3000)
 
 
