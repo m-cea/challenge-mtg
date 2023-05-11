@@ -1,0 +1,23 @@
+<h1 class="titulo">Tabla de Posiciones Fútbol Brasileño</h1>
+<a href="./">Volver</a>
+<div class="tabla">
+<table>
+    <thead>
+        <tr><th>Posición</th><th>Nombre</th><th>Puntos</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th class="prescindible">GF</th><th class="prescindible">GC</th><th class="prescindible">Dif</th></tr>
+    </thead>
+    <tbody>
+        {{#each brasil}}
+        <tr><td>{{posicion}}</td>
+        <td>{{nombre}}</td>
+        <td>{{puntos}}</td>
+        <td>{{jugados}}</td>
+        <td>{{ganados}}</td>
+        <td>{{empatados}}</td>
+        <td>{{perdidos}}</td>
+        <td class="prescindible">{{golesFavor}}</td>
+        <td class="prescindible">{{golesContra}}</td>
+        <td class="prescindible">{{diferencia}}</td></tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>

@@ -1,0 +1,24 @@
+
+<h1>★ Tabla de Posiciones Fútbol Argentino ★</h1>
+<h1>★</h1>
+<div class="tabla">
+<table>
+    <thead>
+        <tr><th>Posición</th><th>Nombre</th><th>Pts</th><th>PJ</th><th>PG</th><th>PE</th><th>PP</th><th class="prescindible">GF</th><th class="prescindible">GC</th><th class="prescindible">Dif</th></tr>
+    </thead>
+    <tbody>
+        {{#each equipos}}
+        <tr><td>{{posicion}}</td>
+        <td>{{nombre}}</td>
+        <td>{{puntos}}</td>
+        <td>{{jugados}}</td>
+        <td>{{ganados}}</td>
+        <td>{{empatados}}</td>
+        <td>{{perdidos}}</td>
+        <td class="prescindible">{{golesFavor}}</td>
+        <td class="prescindible">{{golesContra}}</td>
+        <td class="prescindible">{{diferencia}}</td></tr>
+        {{/each}}
+    </tbody>
+</table>
+</div>
