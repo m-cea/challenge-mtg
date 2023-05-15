@@ -11,7 +11,7 @@ module.exports = async function init(){
         uri: 'https://www.promiedos.com.ar/primera',
         transform: body => cheerio.load(body)
     });
-/*
+
     //Toma de datos de equipos de la página a scrapear
 
     const info_equipo = promiedos('.tablesorter1 tbody tr').each((i, el) =>{
@@ -25,7 +25,7 @@ module.exports = async function init(){
         const golesF = promiedos(el).find('td:nth-child(8)').text();
         const golesC = promiedos(el).find('td:nth-child(9)').text();
         const diferen =  promiedos(el).find('td:nth-child(10)').text();
-
+/*
         //Función para crear la DB, una vez ya creada se precisa actualizar, solo se la usó la primera vez.
 
         async function guardar(){
@@ -74,6 +74,7 @@ module.exports = async function init(){
     actualizarTabla();
     
 
+})
 }
 
 //init();
